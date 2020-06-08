@@ -1,0 +1,26 @@
+.Header {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.Header_wrapper {
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.Header_nav {
+    display: flex;
+    list-style: none;
+}
+
+.Header_nav a, .Header_logo {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: inline-block;
+    font-size: 1.6rem;
+}
