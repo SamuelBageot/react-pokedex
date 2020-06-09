@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classes from './PokeList.module.css';
 import axios from 'axios';
 
+import Spinner from '../../components/Layout/UI/Spinner/Spinner';
 import Pokemons from '../../components/Pokemons/Pokemons';
 
 class PokeList extends Component {
@@ -26,7 +27,7 @@ class PokeList extends Component {
         if (this.state.allPokemons) {
             content = <Pokemons allPokemons={this.state.allPokemons} />
         } else {
-            content = <h4>Loading...</h4>
+            content = <Spinner />
         }
 
         return (
@@ -34,7 +35,7 @@ class PokeList extends Component {
                 {content}
             </div>
         )
-        
+
     }
 }
 
