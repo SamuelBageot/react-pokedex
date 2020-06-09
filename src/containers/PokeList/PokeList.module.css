@@ -1,0 +1,19 @@
+.PokeList {
+    width: 70%;
+    margin: 0 auto;
+}
+.SearchForm {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.SearchInput {
+    height: 4rem;
+    width: 30rem;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+}
+
+.SearchInput::placeholder {
+    color: #ccc;
+}

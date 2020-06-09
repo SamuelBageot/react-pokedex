@@ -1,0 +1,13 @@
+.Pokemons {
+    display: grid;
+    /* width: 70%; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 120px;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.Pokemons a:active, .Pokemons a:visited {
+    text-decoration: none;
+}

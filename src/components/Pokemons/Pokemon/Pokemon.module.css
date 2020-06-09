@@ -1,0 +1,103 @@
+.Pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(168, 168, 168);
+    cursor: pointer;
+    /* height: 27rem; */
+    padding: 3rem 0;
+    transition: all .2s;
+    box-shadow: 1px 2px 8px rgb(161, 161, 161);
+}
+
+.Pokemon:hover {
+    transform: translateY(-3px);
+    box-shadow: 1px 5px 10px rgb(161, 161, 161);
+}
+
+.Num {
+    font-size: 1.5rem;
+    color: rgb(98, 98, 98);
+    margin-bottom: .8rem;
+}
+
+.Pokemon img {
+    margin: 1rem 0;
+}
+
+a, a:focus, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Type {
+    margin: 0 .3rem;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.Grass {
+    background-color: rgb(31, 167, 49);
+}
+
+.Poison {
+    background-color: rgb(153, 18, 194);
+    color: white;
+}
+
+.Fire {
+    background-color: rgb(233, 121, 57);
+    color: white;
+}
+
+.Normal {
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+.Ground {
+    background-color: rgb(233, 169, 95);
+    color: black;
+}
+
+.Rock {
+    background-color: rgb(151, 89, 17);
+    color: white;
+}
+
+.Water {
+    background-color: rgb(43, 181, 223);
+    color: black;
+}
+
+.Electric {
+    background-color: rgb(241, 239, 87);
+    color: black;
+}
+
+.Flying {
+    background-color: rgb(162, 231, 251);
+    color: black;
+}
+
+.Fighting {
+    background-color: rgb(194, 14, 14);
+    color: white;
+}
+
+.Psychic {
+    background-color: rgb(246, 132, 151);
+    color: black;
+}
+
+.Ice {
+    background-color: #7FADFF;
+    color: white;
+}
+
+.Bug {
+    background-color: rgb(180, 250, 123);
+    color: black;
+}
