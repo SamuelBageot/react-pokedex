@@ -9,7 +9,8 @@ class PokeList extends Component {
 
     state = {
         url: 'https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json',
-        allPokemons: null
+        allPokemons: null,
+        pokemonsSearch: null
     }
 
     componentDidMount() {
@@ -22,16 +23,26 @@ class PokeList extends Component {
         })
     }
 
+    nameSearch = e => {
+        const pokemons = [...this.state.allPokemons];
+        const userInput = e.target.value.toLowerCase();
+        const userSearch = pokemons.filter(pokemon => pokemon.name.toLowerCase().includes(userInput) || pokemon.num.includes(userInput));
+        this.setState({pokemonsSearch: userSearch});
+    }
+
     render () {
         let content = null;
         if (this.state.allPokemons) {
-            content = <Pokemons allPokemons={this.state.allPokemons} />
+            content = <Pokemons pokemonsSearch={this.state.pokemonsSearch} allPokemons={this.state.allPokemons} />
         } else {
             content = <Spinner />
         }
 
         return (
             <div className={classes.PokeList}>
+                <form className={classes.SearchForm}>
+                    <input className={classes.SearchInput} onChange={this.nameSearch.bind(this)} placeholder="Search for a Pokemon" />
+                </form>
                 {content}
             </div>
         )
