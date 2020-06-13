@@ -1,0 +1,99 @@
+.FullPokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    min-height: 95vh;
+}
+
+.Title {
+    font-size: 3rem;
+    margin-left: 1.2rem;
+    /* margin-top: 2rem;
+    margin-bottom: 4rem; */
+}
+
+.Data {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    min-width: 35rem;
+    max-width: 55rem;
+    border: 1px solid rgb(156, 156, 156);
+}
+
+.Type {
+    display: inline-block;
+    margin: 2rem .3rem;
+    padding: .5rem;
+    width: 12rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+
+.Grass {
+    background-color: rgb(31, 167, 49);
+}
+
+.Poison {
+    background-color: rgb(153, 18, 194);
+    color: white;
+}
+
+.Fire {
+    background-color: rgb(233, 121, 57);
+    color: white;
+}
+
+.Normal {
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+.Ground {
+    background-color: rgb(233, 169, 95);
+    color: black;
+}
+
+.Rock {
+    background-color: rgb(151, 89, 17);
+    color: white;
+}
+
+.Water {
+    background-color: rgb(43, 181, 223);
+    color: black;
+}
+
+.Electric {
+    background-color: rgb(241, 239, 87);
+    color: black;
+}
+
+.Flying {
+    background-color: rgb(162, 231, 251);
+    color: black;
+}
+
+.Fighting {
+    background-color: rgb(194, 14, 14);
+    color: white;
+}
+
+.Psychic {
+    background-color: rgb(246, 132, 151);
+    color: black;
+}
+
+.Ice {
+    background-color: #7FADFF;
+    color: white;
+}
+
+.Bug {
+    background-color: rgb(180, 250, 123);
+    color: black;
+}
