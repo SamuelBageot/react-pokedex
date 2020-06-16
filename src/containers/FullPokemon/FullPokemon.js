@@ -34,7 +34,7 @@ class FullPokemon extends Component {
             this.state.pokemon.weaknesses.forEach(weakness => weaknesses.push(<span className={[classes.Type, classes[weakness]].join(' ')} key={weakness}>{weakness}</span>));
             this.state.pokemon.type.forEach(type => pokemonTypes.push(<span className={[classes.Type, classes[type]].join(' ')} key={type}>{type}</span>));
             this.state.pokemon.prev_evolution && this.state.pokemon.prev_evolution.forEach(prevEvolution => prevEvolutions.push(<span key={prevEvolution.name}>{prevEvolution.name}</span>));
-            this.state.pokemon.next_evolution && this.state.pokemon.next_evolution.forEach(nextEvolution => nextEvolutions.push(<span key={nextEvolution.name}>==> {nextEvolution.name} </span>));
+            this.state.pokemon.next_evolution && this.state.pokemon.next_evolution.forEach(nextEvolution => nextEvolutions.push(<span key={nextEvolution.name}>{nextEvolution.name} </span>));
 
             pokemon = (
                 <div className={classes.FullPokemon}>
@@ -48,6 +48,11 @@ class FullPokemon extends Component {
                         <p>{pokemonTypes}</p>
                         <p>Faiblesse(s)</p>
                         <p>{weaknesses}</p>
+                    </div>
+                    <div className={classes.Evolutions}>
+                        {(prevEvolutions.length > 0 || nextEvolutions.length > 0) ? <h2 style={{textAlign: 'center'}}>Evolutions</h2> : <h2 style={{textAlign: 'center'}}>Ce pokemon n'évolue pas</h2>}
+                        {prevEvolutions.length > 0 && <p style={{fontSize: '1.6rem'}}>Previous Evolutions : {prevEvolutions}</p>}
+                        {nextEvolutions.length > 0 && <p style={{fontSize: '1.6rem'}}>Next Evolutions : {nextEvolutions}</p>}
                     </div>
                 </div>
             )
